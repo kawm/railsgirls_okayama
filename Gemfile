@@ -16,7 +16,9 @@ end
 group :production do
   gem 'pg'
 end
-gem 'carrierwave'
+gem 'carrierwave', '~> 1.2'
+gem 'carrierwave-dropbox', '~> 2.0.0.rc1'
+gem 'dotenv-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
