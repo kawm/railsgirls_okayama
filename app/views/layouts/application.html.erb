@@ -31,6 +31,11 @@
           <% end %>
         ><a href="/ideas">Ideas</a></li>
         <li
+          <% if current_page?(controller: 'ideas', action: 'new') %>
+            class="active"
+          <% end %>
+            ><%= link_to 'New Idea', new_idea_path %></li>
+        <li
           <% if current_page? '/pages/info' %>
             class="active"
           <% end %>
